@@ -1,0 +1,490 @@
+body {
+  font-family: 'Titillium Web', sans-serif;
+  background-image: url("img/background.jpg");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 100vh;
+}
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 42px;
+  color: #ffc529;
+  margin: 0 0 24px 0;
+}
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 36px;
+  color: #ffc529;
+  margin: 0 0 42px 0;
+}
+h3 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  color: white;
+  margin: 0;
+}
+h4 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  color: white;
+  margin: 0;
+  text-align: center;
+  z-index: 3;
+}
+h5 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  color: white;
+  margin: 48px 0;
+}
+p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+}
+.yellowBold {
+  font-weight: 600;
+  color: #ffc529;
+}
+.number {
+  font-size: 18px;
+  color: rgba(255,255,255,0.3);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 120px;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.column:first-child {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 27px;
+}
+.column:last-child {
+  max-width: 546px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 27px;
+}
+.platformSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.logo {
+  max-width: 255px;
+  height: auto;
+  margin-right: 34px;
+}
+.platform {
+  padding: 8px;
+  margin: 4px;
+  border: 2px solid transparent;
+}
+.platform:first-child {
+  border-bottom: 2px solid #ffc529;
+}
+.platform:hover {
+  border: 2px solid #ffc529;
+  transition-duration: 0.2s;
+}
+.itemSection {
+  display: flex;
+  flex-direction: row;
+}
+.itemContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 12px;
+}
+.itemContainer:first-child {
+  margin-left: 0px;
+}
+.itemContainer:last-child {
+  margin-right: 0px;
+}
+.item {
+  margin-bottom: -12px;
+  z-index: 2;
+  -webkit-filter: drop-shadow(0 8px 32px rgba(0,0,0,0.6));
+  filter: drop-shadow(0 8px 32px rgba(0,0,0,0.6));
+}
+.textBox {
+  border: 2px solid rgba(255,255,255,0.5);
+  padding: 14px 20px;
+  z-index: 1;
+}
+.buttonSection {
+  display: flex;
+  flex-direction: row;
+  margin-top: 48px;
+}
+button {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  border: none;
+}
+.mainButton {
+  color: #0b0b13;
+  background-color: #ffc529;
+  border-radius: 2px;
+  padding: 16px 56px;
+}
+.mainButton:hover {
+  background-color: #ffdc7e;
+  transition: 0.15s;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.6);
+}
+.secondaryButton {
+  color: white;
+  background: none;
+  padding: 16px 32px;
+  margin-left: 24px;
+  border: 2px solid transparent;
+}
+.secondaryButton:hover {
+  border: 2px solid rgba(255,255,255,0.5);
+  transition: 0.15s;
+}
+.socialMedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.fa {
+  color: white;
+  font-size: 28px;
+  margin: 24px 8px;
+}
+.fa:first-child {
+  margin-left: 0;
+}
+.fa:last-child {
+  margin-right: 0;
+}
+.fa:hover {
+  color: #ffc529;
+  transition: 0.2s;
+}
+.howtoSection {
+  padding: 48px;
+  background: #202334; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left bottom, #191a24, #202334); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(top right, #191a24, #202334); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(top right, #191a24, #202334); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to top right, #191a24, #202334); /* Standard syntax */
+  box-shadow: 0 12px 24px rgba(0,0,0,0.34);
+}
+.titleRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.howtoIcon {
+  margin: 0 16px;
+}
+.howtoText {
+  color: rgba(255,255,255,0.7);
+  margin: 12px 0 24px 0;
+}
+.howtoText:last-child {
+  margin-bottom: 0;
+}
+.socialProof {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 36px;
+}
+.socialPortrait {
+  margin-right: 36px;
+}
+.socialQuote {
+  color: white;
+  margin: 0;
+}
+.socialName {
+  color: rgba(255,255,255,0.7);
+  font-style: italic;
+  margin-top: 8px;
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1480px) {
+  body {
+    justify-content: center;
+    background-image: url("img/backgroundSmall.jpg");
+  }
+  .row {
+      margin: 0 32px;
+  }
+  .column:first-child {
+    max-width: 530px;
+    margin-right: 20px;
+  }
+  .column:last-child {
+    max-width: 520px;
+    margin-left: 20px;
+  }
+  .itemContainer {
+    margin: 0 8px;
+  }
+  .howtoSection {
+    padding: 42px;
+  }
+  h1 {
+    font-size: 30px;
+    line-height: 34px;
+  }
+  h2 {
+    font-size: 26px;
+    line-height: 30px;
+    margin: 0 0 30px 0;
+  }
+  h3 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  h4 {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  h5 {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 36px 0;
+  }
+  p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .logo {
+    max-width: 200px;
+  }
+  .item {
+    max-height: 90px;
+  }
+  .textBox {
+    padding: 10px 16px;
+  }
+  button {
+    font-size: 16px;
+  }
+  .mainButton {
+    padding: 14px 48px;
+  }
+  .secondaryButton {
+    padding: 14px 28px;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 572px) and (max-width: 1023px) , screen and (max-height: 650px) {
+  body {
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("img/backgroundSmall.jpg");
+    height: auto;
+  }
+  .row {
+      margin: auto;
+      flex-direction: column;
+      justify-content: flex-start;
+  }
+  .column:first-child {
+    max-width: 100%;
+    margin: 5vh 10% 0 10%;
+  }
+  .column:last-child {
+    max-width: 100%;
+    margin: 0 10% 5vh 10%;
+  }
+  .platformSection {
+    justify-content: space-between;
+  }
+  .socialMedia {
+    justify-content: center;
+    margin: 24px 0;
+  }
+  .itemContainer {
+    margin: 0 8px;
+  }
+  .buttonSection {
+    margin-top: 36px;
+  }
+  .howtoSection {
+    padding: 42px;
+  }
+  h1 {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 12px;
+  }
+  h2 {
+    font-size: 26px;
+    line-height: 30px;
+    margin: 0 0 30px 0;
+  }
+  h3 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  h4 {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  h5 {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 20px 0 36px 0;
+  }
+  p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .logo {
+    max-width: 160px;
+  }
+  .item {
+    max-height: 90px;
+  }
+  .textBox {
+    padding: 10px 16px;
+  }
+  button {
+    font-size: 16px;
+  }
+  .mainButton {
+    padding: 14px 48px;
+  }
+  .secondaryButton {
+    padding: 14px 28px;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 571px) {
+  body {
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("img/backgroundSmall.jpg");
+    height: auto;
+    margin: 0;
+  }
+  .row {
+      margin: auto;
+      flex-direction: column;
+      justify-content: flex-start;
+  }
+  .column:first-child {
+    max-width: 100%;
+    margin: 5vh 16px 0 16px;
+  }
+  .column:last-child {
+    max-width: 100%;
+    margin: 0 16px 5vh 16px;
+  }
+  .platformSection {
+    justify-content: space-between;
+  }
+  .socialMedia {
+    justify-content: center;
+    margin: 36px 0;
+  }
+  .itemContainer {
+    margin: 0 8px;
+  }
+  .buttonSection {
+    flex-direction: column;
+    margin-top: 36px;
+  }
+  .howtoSection {
+    padding: 36px 20px;
+  }
+  .socialProof {
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 8px;
+  }
+  h2 {
+    font-size: 26px;
+    line-height: 30px;
+    margin: 0 16px 30px 0;
+  }
+  h3 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  h4 {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  h5 {
+    font-size: 15px;
+    line-height: 22px;
+    margin: 20px 0 36px 0;
+  }
+  p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .socialName {
+    margin-top: 12px;
+  }
+  .logo {
+    max-width: 140px;
+  }
+  .platform {
+    padding: 6px;
+    margin: 3px;
+    max-width: 26px;
+  }
+  .item {
+    max-height: 70px;
+  }
+  .fa {
+    margin: 0 8px;
+  }
+  .socialPortrait {
+    margin-bottom: 24px;
+  }
+  .textBox {
+    padding: 8px 12px;
+  }
+  button {
+    font-size: 16px;
+  }
+  .mainButton {
+    padding: 14px 48px;
+    margin-bottom: 8px
+  }
+  .secondaryButton {
+    padding: 14px 28px;
+    margin-left: 0;
+  }
+}
